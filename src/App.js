@@ -16,19 +16,19 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <header className="app-header">
-        <img src="logo.png" alt="Role Finder" className="app-logo" /> {/* Assuming you have a logo */}
-        <h1>Role Finder</h1>
-      </header>
-      <main className="app-main">
-        <p>Find people, find what they do</p>
-        <SearchComponent onSearch={handleSearch} />
-        <SearchResults results={results} />
-      </main>
-      <footer className="app-footer">
-        <a href="/about">About</a>
-      </footer>
-    </div>
+    <header className="app-header">
+      <img src="logo.png" alt="Role Finder" className="app-logo" /> {/* Assuming you have a logo */}
+      <h1>Role Finder</h1>
+    </header>
+    <main className="app-main">
+      <h1>Find people, find what they do</h1>
+      <SearchComponent onSearch={handleSearch} />
+      <SearchResults results={results} />
+    </main>
+    <footer className="app-footer">
+      <a href="/about">About</a>
+    </footer>
+  </div>
   );
 };
 

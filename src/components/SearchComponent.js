@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './SearchComponent.css';
-import { SendRegular} from '@fluentui/react-icons'
+import send from '../assets/send.svg';
+
 const SearchComponent = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
@@ -10,7 +11,6 @@ const SearchComponent = ({ onSearch }) => {
 
   return (
     <div className="search-container">
-      <div className="search-input-container">
       <input 
         type="text" 
         value={query} 
@@ -18,10 +18,8 @@ const SearchComponent = ({ onSearch }) => {
         placeholder="Who can I talk to about azure studio" 
         className="search-input"
       />
-      </div>
-
       <button onClick={handleSearch} className="search-button">
-        <img src={SendRegular} alt="Send" className="send-icon"/>
+        <img src={send} alt="Send" className="send-icon"/>
       </button>
     </div>
   );
