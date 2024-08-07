@@ -1,0 +1,26 @@
+/* src/components/SearchResults.css */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .results-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .results-container li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    text-align: left;
+    background-color: #fafafa;
+  }
+  
+  .results-container li:last-child {
+    border-bottom: none;
+  }
+  
