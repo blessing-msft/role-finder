@@ -5,7 +5,8 @@ import send from '../assets/send.svg';
 const SearchComponent = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    e.preventDefault();
     onSearch(query);
   };
 

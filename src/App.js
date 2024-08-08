@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import SearchComponent from './components/SearchComponent';
 import SearchResults from './components/searchResults';
-import search from './services/searchService';
+import search from './services/searchService.js';
 
 import './App.css';
 
@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div className="app-container">
     <header className="app-header">
-      <img src="logo.png" alt="Role Finder" className="app-logo" /> {/* Assuming you have a logo */}
+      <img src="logo.png" alt="Role Finder" className="app-logo" />
       <h1>Role Finder</h1>
     </header>
     <main className="app-main">
