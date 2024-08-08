@@ -18,9 +18,9 @@ search_service_endpoint = os.getenv("SEARCH_SERVICE_ENDPOINT")
 index_name = os.getenv("INDEX_NAME")
 api_key = os.getenv("SEARCH_SERVICE_API_KEY")
 
-print(search_service_endpoint)
-print(index_name)
-print(api_key)
+# print(search_service_endpoint)
+# print(index_name)
+# print(api_key)
 
 logging.basicConfig(level=logging.DEBUG)
 

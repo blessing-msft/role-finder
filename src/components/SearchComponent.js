@@ -6,8 +6,10 @@ const SearchComponent = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
   const handleSearch = (e) => {
-    e.preventDefault();
-    onSearch(query);
+    e.preventDefault(); 
+    if (query.trim() !== '') {
+      onSearch(query); 
+    }
   };
 
   return (

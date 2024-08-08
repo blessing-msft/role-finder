@@ -5,21 +5,30 @@
   margin-top: 20px;
 }
 
-.results-container ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.search-results table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.results-container li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  width: 100%;
+.search-results th,
+.search-results td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.search-results th {
+  background-color: #f2f2f2;
   text-align: left;
-  background-color: #fafafa;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.results-container li:last-child {
-  border-bottom: none;
+.search-results tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
+
+.search-results tr:hover {
+  background-color: #ddd;
+}
+
