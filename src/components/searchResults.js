@@ -1,24 +1,17 @@
-// src/components/SearchResults.js
 import React from 'react';
-import './SearchResults.css';
 
 const SearchResults = ({ results }) => {
-    console.log(results);
+  if (!results || results.length === 0) {
+    return <div>No results found.</div>;
+  }
+
   return (
-    <div className="results-container">
-      {results.length === 0 ? (
-        <p>No results found</p>
-      ) : (
-        <ul>
-           {results.map((result, index) => (
-        <div key={index} className="result-item">
-          <p>{result.Name}</p>
-          <p>{result.Role}</p>
-          <p>{result.Email}</p>
-        </div>
-      ))}
-        </ul>
-      )}
+    <div className="search-results">
+      <ul>
+        {results.map((result, index) => (
+          <li key={index}>{result.name}</li>
+        ))}
+      </ul>
     </div>
   );
 };

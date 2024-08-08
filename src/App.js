@@ -10,8 +10,13 @@ const App = () => {
   const [results, setResults] = useState([]);
 
   const handleSearch = async (query) => {
-    const data = await search(query);
-    setResults(data.results); 
+    try {
+      const data = await search(query);
+      setResults(data.results || []);
+    } catch (error) {
+      console.error('Search error:', error);
+      setResults([]);
+    }
   };
 
   return (
