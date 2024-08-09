@@ -5,6 +5,12 @@
   margin-top: 20px;
 }
 
+.no-results {
+  font-size: 20px;
+  text-align: center;
+  padding: 16px;
+}
+
 .search-results table {
   width: 100%;
   border-collapse: collapse;

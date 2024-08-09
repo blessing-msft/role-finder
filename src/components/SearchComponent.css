@@ -8,7 +8,10 @@
   border: 1px solid #ccc;
   /* border-radius: 20px; */
   padding: 10px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  border-radius: 8px;
+border: 1px solid var(--Color-Neutral-Stroke-1-Rest, #D1D1D1);
+background: var(--Color-Neutral-Background-1-Rest, #FFF);
 }
 
 .search-input {
@@ -18,6 +21,7 @@
   font-size: 16px;
   /* border-radius: 20px; */
   padding-left: 20px;
+  
 }
 
 .search-button {

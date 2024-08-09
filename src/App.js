@@ -32,9 +32,9 @@ const App = () => {
       <SearchComponent onSearch={handleSearch} />
       <SearchResults results={results} />
     </main>
-    <footer className="app-footer">
+    {/* <footer className="app-footer">
       <a href="/about">About</a>
-    </footer>
+    </footer> */}
   </div>
   );
 };

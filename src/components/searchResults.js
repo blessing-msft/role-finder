@@ -3,7 +3,7 @@ import './SearchResults.css';
 
 const SearchResults = ({ results }) => {
   if (!results || results.length === 0) {
-    return <div className='no-result'>No results found.</div>;
+    return <div className='no-result' style={{padding: '16px'}}>No results found.</div>;
   }
 
   const parseContent = (content) => {
